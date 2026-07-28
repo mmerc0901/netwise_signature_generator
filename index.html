@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netwise Signature Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <img src="assets/Logo_2026.png" alt="Netwise Logo" class="header-logo">
+
+        <div>
+            <h1>Netwise Signature Generator</h1>
+            <p>
+                Generate standardized HTML signatures for GitHub and email use.
+            </p>
+        </div>
+    </header>
+
+    <section class="card">
+
+        <h2>Instructions</h2>
+
+        <ol>
+            <li>Enter the employee information below.</li>
+            <li>Review the live preview.</li>
+            <li>Click <strong>Copy HTML</strong>.</li>
+            <li>Paste the copied HTML into GitHub or your signature editor.</li>
+        </ol>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Employee Information</h2>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="firstWord">First Word</label>
+                <input
+                    type="text"
+                    id="firstWord"
+                    placeholder="Customer">
+            </div>
+
+            <div class="form-group">
+                <label for="secondWord">Second Word</label>
+                <input
+                    type="text"
+                    id="secondWord"
+                    placeholder="Support">
+            </div>
+
+            <div class="form-group full-width">
+                <label for="position">Position (Optional)</label>
+                <input
+                    type="text"
+                    id="position"
+                    placeholder="Technical Support Specialist">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="0952.483.2095">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="cs1@netwiseit.org">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Live Preview</h2>
+
+        <div id="previewContainer">
+
+            <!-- Generated Preview -->
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Generated HTML</h2>
+
+        <textarea
+            id="htmlOutput"
+            readonly
+            spellcheck="false"></textarea>
+
+        <button id="copyButton">
+            Copy HTML
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
